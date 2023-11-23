@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part 3</title>
+    <link
+      rel="stylesheet"
+      href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-nav" id="myTopNav">
+        <a href="/" class="active">Part 1</a>
+        <a href="./part2.html">Part 2</a>
+        <a href="./part3.html">Part 3</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Part 1 of the test</h2>
+
+      <pre>
+            <h4>Code given to me</h4>
+        <code>
+            function exampleFunction() {
+                console.log("This is a poorly written function");
+                var x = 5;
+                if (x > 3) {
+                    document.write("x is greater than 3");
+                } else {
+                    document.write("x is not greater than 3");
+                }
+            }
+        </code>
+      </pre>
+
+      <pre>
+            <h4>Code rewrite to be more readable</h4>
+        <code>
+            function exampleFunction() {
+                let x = 5;
+                let message = x > 3 ? "x is greater than 3" : "x is not greater than 3";
+                console.log(message);
+                //   document.write(message);
+            }
+        </code>
+      </pre>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
